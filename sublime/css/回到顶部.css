@@ -1,0 +1,19 @@
+.main{
+	margin:0px auto;
+	width: 1190px;
+}
+#change{
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	background: url(../images/p2.png) no-repeat;
+	/*background-color: red;*/
+	/*display: inline-block;*/
+	left: 95%;
+	top: 90%;
+}
+#change:hover{
+	/*background-color: green;*/
+	background:url(../images/p2.png);
+	background-position: 0 -40px;
+}

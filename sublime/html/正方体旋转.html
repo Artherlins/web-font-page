@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/正方体旋转.css">
+	<script type="text/javascript" src="../js/正方体旋转.js"></script>
+</head>
+<body>
+	<div class="all">
+		<div class="main" id="main">
+			<div class="face" id="face1">1</div>
+			<div class="face" id="face2">2</div>
+			<div class="face" id="face3">3</div>
+			<div class="face" id="face4">4</div>
+			<div class="face" id="face5">5</div>
+			<div class="face" id="face6">6</div>
+		</div>
+	</div>
+
+	<div class="oper">
+		<p>rotate x: <span class="x1" id="x1">0</span> deg</p>
+		<input type="range" name="x2" id="x2" max="360" min="-360" onchange="rotate()" oninput="rotate()">
+        <p>rotate y: <span class="y1" id="y1">0</span> deg</p>
+		<input type="range" name="y2" id="y2" max="360" min="-360" onchange="rotate()" oninput="rotate()">
+		<p>rotate z: <span class="z1" id="z1">0</span> deg</p>
+		<input type="range" name="z2" id="z2" max="360" min="-360" onchange="rotate()" oninput="rotate()">
+	</div>
+</body>
+</html>

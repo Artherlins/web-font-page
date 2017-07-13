@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+</script> -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("div").animate({
+				left:'+=100px',
+				width:'+=150px',
+				// height:'+=150px'
+				height:'toggle'
+			},function(){
+				alert("hahh");
+			});
+
+		});
+	});
+</script>
+<style type="text/css">
+	div{
+		width: 100px;
+		height: 100px;
+		background-color: #e5eecc;
+		margin-top: 20px;
+		position: absolute;
+	}
+</style>
+<body>
+	<button>点点看吧！</button>
+	<div></div>
+</body>
+</html>
