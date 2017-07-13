@@ -1,0 +1,68 @@
+package com.softeem.planeGame;
+
+import java.awt.image.BufferedImage;
+
+/**
+ * 子弹类
+ * 子弹发射之后就就存在自己的移动轨迹，不再受到英雄机的管理
+ * @author Administrator
+ *
+ */
+public class Bullet extends Thread{
+
+	BufferedImage img;
+	int width;//子弹的高度
+	int height;//子弹的宽度
+	int x;//声明子弹出现位置x轴
+	int y;//声明子弹出现位置y轴
+	int speed=25;//子弹的飞行速度
+	
+	public Bullet(int x,int y) {
+		img=ImageLoader.load("bullet1.png");//根据指定的图片获取
+		//分别获取子弹的宽高（缩小一倍）
+		width=img.getWidth()/2;
+		height=img.getHeight()/2;
+		this.x=x-width/2;
+		this.y=y;
+	}
+	/*
+	 * 改变子弹y轴位置
+	 */
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		while(true){
+			//修改y轴位置（改变子弹的坐标）
+			y-=speed;
+			//子弹飞出屏幕外
+			if(y<0){
+				//将集合中子弹对象移除
+				GamePanel.bullets.remove(this);
+				break;//结束当前子弹对象的循环
+			}
+			//判断是否发生碰撞
+			//将屏幕中所有的敌机获取
+			for(int i=0;i<GamePanel.enemies.size();i++){
+				Enemy e=GamePanel.enemies.get(i);//获取敌机
+				//判断子弹是否与敌机重叠
+				if((x>=e.x && x<=e.x+e.height)&& (y>=e.y && y<=e.y+e.height)){
+					//System.out.println("发生碰撞");
+					e.blood--;//减少血量
+					GamePanel.bullets.remove(this);
+					if(e.blood<=0){
+						e.boom();//销毁敌机
+					}
+				}
+			}
+			try {
+				sleep(100);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	
+
+}

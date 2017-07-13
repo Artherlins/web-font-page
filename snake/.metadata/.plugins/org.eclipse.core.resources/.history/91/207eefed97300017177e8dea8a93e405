@@ -1,0 +1,36 @@
+package com.snake;
+
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+
+public class SnakeJPanel extends JPanel {
+	JButton startButton=new JButton("开始");
+	JButton exitButton=new JButton("退出");
+	int fenshu=0;
+	int speed=1;
+	
+	
+	public SnakeJPanel() {
+		super();
+		setLayout(new FlowLayout(FlowLayout.LEFT));
+		add(startButton);
+		add(exitButton);
+	}
+
+	@Override
+	public void paint(Graphics g) {
+		// TODO Auto-generated method stub
+		super.paint(g);
+		g.drawRect(15, 40, 400, 300);
+		g.drawString("分数："+fenshu, 150, 25);
+		g.drawString("速度："+speed, 250, 25);
+		
+	}
+	
+	
+	
+	
+}

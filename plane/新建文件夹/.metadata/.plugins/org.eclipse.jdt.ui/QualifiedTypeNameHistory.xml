@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.softeem.mygame.MyGame"/>
+<fullyQualifiedTypeName name="com.softeem.plane.PlaneGame"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="com.softeem.planeGame.Main"/>
+<fullyQualifiedTypeName name="javax.swing.JPanel"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.net.URI"/>
+<fullyQualifiedTypeName name="com.softeem.planeGame.GamePanel.RefreshTask"/>
+<fullyQualifiedTypeName name="com.softeem.planeGame.Hero"/>
+<fullyQualifiedTypeName name="com.softeem.planeGame.Hero.FlyTask"/>
+<fullyQualifiedTypeName name="java.awt.event.MouseMotionListener"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="com.softeem.planeGame.GamePanel.EnemyFactory"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.softeem.planeGame.Setting"/>
+<fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+<fullyQualifiedTypeName name="java.util.TimerTask"/>
+<fullyQualifiedTypeName name="java.util.Timer"/>
+<fullyQualifiedTypeName name="com.softeem.planeGame.Hero.BulletTask"/>
+<fullyQualifiedTypeName name="com.softeem.planeGame.Bullet"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.softeem.planeGame.ImageLoader"/>
+<fullyQualifiedTypeName name="com.softeem.planeGame.Enemy"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.softeem.planeGame.GamePanel"/>
+</qualifiedTypeNameHistroy>
